@@ -23,7 +23,6 @@ sudo docker-compose up --build
 ```
 
 ## Project Structure
-
 ```
 .
 ├── app.py
