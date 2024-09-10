@@ -1,0 +1,69 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.div-principal {
+    background-color: white;
+    font-family: sans-serif;
+    display: flex;
+    width: 99vw;
+}
+
+.info-title {
+    position: absolute;
+    background-color: rgba(240, 255, 255, 0.705);
+    left: 2.5vw;
+    width: 40vw;
+    height: 70vh;
+    margin-top: 2.5vh;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.info-title > h1 {
+    margin-top: 2vh;
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 3.5vh;
+}
+
+.dropdown {
+    width: 31.5vw;
+    margin-left: 4vw;
+    text-align: center;
+}
+
+.img-ipma {
+    position: absolute;
+    left: 4vw;
+    top: 90vh;
+    text-decoration: none;
+    z-index: 1;
+    width: 11vw;
+}
+
+.img-ipma > p {
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+    font-size: 1vw;
+    margin-bottom: 0;
+}
+
+.div-mapa {
+    height: 100vh;
+}
+
+#map {
+    width: 98vw;
+    height: 100vh;
+}
+
+#history-graph {
+    height: 50vh;
+}

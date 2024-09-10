@@ -1,0 +1,212 @@
+[
+    {
+        "data": [
+            [
+                1725962400000,
+                "23.4"
+            ]
+        ],
+        "label": "Beja",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "30.8"
+            ]
+        ],
+        "label": "Bragan&ccedil;a",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "110.0"
+            ]
+        ],
+        "label": "Castelo Branco",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "69.7"
+            ]
+        ],
+        "label": "Coimbra",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "86.6"
+            ]
+        ],
+        "label": "Elvas",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "27.5"
+            ]
+        ],
+        "label": "Faro",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "11.0"
+            ]
+        ],
+        "label": "Fratel (esta\u00e7\u00e3o submersa)",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "40.8"
+            ]
+        ],
+        "label": "Funchal",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "39.0"
+            ]
+        ],
+        "label": "Juromenha (esta\u00e7\u00e3o submersa)",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "62.7"
+            ]
+        ],
+        "label": "Lisboa",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "147.0"
+            ]
+        ],
+        "label": "Penhas Douradas",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "106.0"
+            ]
+        ],
+        "label": "Portalegre",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "135.0"
+            ]
+        ],
+        "label": "Porto",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    },
+    {
+        "data": [
+            [
+                1725962400000,
+                "41.4"
+            ]
+        ],
+        "label": "Sines",
+        "lines": {
+            "show": true
+        },
+        "points": {
+            "show": false
+        }
+    }
+]
