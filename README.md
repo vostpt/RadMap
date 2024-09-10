@@ -22,14 +22,6 @@ In your folder run:
 sudo docker-compose up --build
 ```
 
-## Dashboard
-To view the dashboard, access your browser and type the corresponding URL:
-```sh
-http://<your_machine_ip>:8050/
-```
-
-![RadMap Dashboard](/images/dashboard.png)
-
 ## Project Structure
 
 ```
@@ -49,6 +41,14 @@ http://<your_machine_ip>:8050/
 ├── README.md
 └── requirements.txt
 ```
+
+## Dashboard
+To view the dashboard, access your browser and type the corresponding URL:
+```sh
+http://<your_machine_ip>:8050/
+```
+
+![RadMap Dashboard](/images/dashboard.png)
 
 ## Credits
 - [VOST Portugal](https://github.com/vostpt)
