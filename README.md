@@ -19,7 +19,7 @@ cp .env.example .env
 ## Installation
 In your folder run:
 ```sh
-sudo docker-compose up --build
+docker-compose up --build -d
 ```
 
 ## Project Structure
@@ -44,7 +44,7 @@ sudo docker-compose up --build
 ## Dashboard
 To view the dashboard, access your browser and type the corresponding URL:
 ```sh
-http://<your_machine_ip>:8050/
+http://localhost:8050/
 ```
 
 ![RadMap Dashboard](/images/dashboard.png)
