@@ -20,12 +20,12 @@ load_dotenv('.env')
 host = os.getenv('MONGO_HOST')
 user = os.getenv('MONGO_USER')
 password = os.getenv('MONGO_PASSWORD')
-database = os.getenv('MONGO_DATABASE')
+database_name = os.getenv('MONGO_DATABASE')
 collection_name = os.getenv('MONGO_COLLECTION')
 
 # Conectar ao MongoDB
-client = MongoClient(f"mongodb://{host}/{database}")
-db = client[database]
+client = MongoClient(f"mongodb://{user}:{password}@{host}:27017/?authSource=admin")
+db = client[database_name]
 collection = db[collection_name]
 
 def fetch():
@@ -58,7 +58,7 @@ def fetch():
         print(f"Erro na requisição: {response.status_code}")
 
 def store(hour, place, value, latitude, longitude):
-    # Verifica se o valor já existe no MongoDB
+    # Verifica se o valor jÃ¡ existe no MongoDB
     existing_data = collection.find_one({"value": value, "place": place, "hour": hour})
     
     if not existing_data:
@@ -72,8 +72,6 @@ def store(hour, place, value, latitude, longitude):
         }
         # Insere o documento no MongoDB
         collection.insert_one(radioactivity_data)
-    else:
-        print("Radioatividade já registrada ✔")
 
 def data_processing():
     info, hour_init, hour_end = fetch()

@@ -27,26 +27,23 @@ database_name = os.getenv('MONGO_DATABASE')
 collection_name = os.getenv('MONGO_COLLECTION')
 
 # Conectar ao MongoDB
-client = MongoClient(f"mongodb://{host}/{database_name}")
+client = MongoClient(f"mongodb://{user}:{password}@{host}:27017/?authSource=admin")
 db = client[database_name]
 collection = db[collection_name]
-
 def update_data():
     """Busca os dados do MongoDB e os converte para DataFrame"""
-    data = list(collection.find())  # Pega todos os documentos da coleção
+    data = list(collection.find())  # Pega todos os documentos da coleÃ§Ã£o
     for item in data:
-        item.pop('_id', None)  # Remove o campo _id que é gerado automaticamente
+        item.pop('_id', None)  # Remove o campo _id que Ã© gerado automaticamente
     db_df = pd.DataFrame(data)
     return db_df
 
 def get_place(place):
-    """Obtém o último registro de um local específico."""
     global latest_data
     data = latest_data[latest_data['place'] == place]
     return data.iloc[-1] if not data.empty else None
 
 def get_all_from_place(place):
-    """Obtém todos os registros de um local específico."""
     global latest_data
     data = latest_data[latest_data['place'] == place]
     df = pd.DataFrame(data, columns=['hour', 'place', 'value', 'latitude', 'longitude'])
@@ -80,7 +77,7 @@ scheduler.start()
 
 selected_place = "Lisboa"
 
-# Cria a aplicação Dash
+# Cria a aplicaÃ§Ã£o Dash
 app = dash.Dash(__name__, title="Radioactivity Dashboard")
 
 app.layout = html.Div([
@@ -131,10 +128,10 @@ app.layout = html.Div([
     Input('title-dropdown', 'value')
 )
 def update_dropdown(selected_place):
-    """Atualiza as opções do dropdown com os locais disponíveis."""
+    """Atualiza as opÃ§Ãµes do dropdown com os locais disponÃ­veis."""
     dropdown_options = [{'label': place, 'value': place} for place in latest_data['place'].unique()]
 
-    # Define o valor inicial como Lisboa se não houver seleção
+    # Define o valor inicial como Lisboa se nÃ£o houver seleÃ§Ã£o
     if selected_place is None:
         initial_value = "Lisboa"
     else:
@@ -146,7 +143,7 @@ def update_dropdown(selected_place):
     Output("history-graph", "figure"), 
     Input("title-dropdown", "value"))
 def update_history_graph(place):
-    """Atualiza o gráfico histórico com base no local selecionado."""
+    """Atualiza o grÃ¡fico histÃ³rico com base no local selecionado."""
     selected_place = place if place is not None else selected_place
     fig = px.line(
         get_all_from_place(selected_place),
