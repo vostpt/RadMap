@@ -109,6 +109,15 @@ app.layout = html.Div([
     dcc.Graph(
         id='map',
     ),
+    html.A(
+        children=[
+            html.Img(
+                id='vostpt-logo',
+                src="assets/VOSTPT_LOGO_2023_cores.svg",
+            )
+        ],
+        href="https://vost.pt",
+    ),
     dcc.Interval(
         id='interval-component',
         interval=60*5000,  # Update every 5 minutes

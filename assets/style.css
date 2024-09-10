@@ -39,3 +39,38 @@ body {
 #history-graph {
     height: 50vh;
 }
+
+#vostpt-logo {
+    height: 10vh;
+    position: absolute;
+    z-index: 2;
+    top: 85vh;
+    left: 2.5vw;
+    background-color: white;
+    border-radius: 100%;
+    padding: 7.5px;
+    animation: vostpt-logo-rotation-init 1s 0.7s;
+}
+
+#vostpt-logo:hover {
+    animation: vostpt-logo-rotation 1s;
+}
+
+@keyframes vostpt-logo-rotation {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes vostpt-logo-rotation-init {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+    

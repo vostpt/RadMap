@@ -80,8 +80,10 @@ def data_processing():
     data = json.loads(info)
     
     # Save data to JSON file
+    """
     with open('data/dados.json', 'w') as f:
         json.dump(data, f, indent=4)
+    """
 
     for i in range(len(data)):
         locals.append(data[i]["label"])
@@ -104,7 +106,7 @@ def data_processing():
             if not (latitude_value and longitude_value):
                 print(f"Coordinates not found for {local}")
             j += 1
-        store(hour_end, new_place_name, value, latitude_value, longitude_value)
+        store(hour_init, new_place_name, value, latitude_value, longitude_value)
         i += 1
         time.sleep(0.2)
         
