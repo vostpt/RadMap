@@ -3,7 +3,7 @@
  A web panel in Python that displays real-time radiation levels in mainland Portugal, Azores and Madeira. The dashboard features an interactive map and historical graphs to track radiation data over time for each location.
 
 ## Download Files
-Copy the `.env` file:
+Clone the repository:
 ```sh
 git clone https://github.com/vostpt/RadMap.git
 ```
