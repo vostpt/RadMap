@@ -5,13 +5,6 @@ body {
     font-family: sans-serif;
 }
 
-.div-principal {
-    background-color: white;
-    font-family: sans-serif;
-    display: flex;
-    width: 99vw;
-}
-
 .info-title {
     position: absolute;
     background-color: rgba(240, 255, 255, 0.705);
@@ -36,27 +29,6 @@ body {
     width: 31.5vw;
     margin-left: 4vw;
     text-align: center;
-}
-
-.img-ipma {
-    position: absolute;
-    left: 4vw;
-    top: 90vh;
-    text-decoration: none;
-    z-index: 1;
-    width: 11vw;
-}
-
-.img-ipma > p {
-    text-decoration: none;
-    font-style: normal;
-    color: black;
-    font-size: 1vw;
-    margin-bottom: 0;
-}
-
-.div-mapa {
-    height: 100vh;
 }
 
 #map {
